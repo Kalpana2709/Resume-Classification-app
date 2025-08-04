@@ -8,6 +8,13 @@ label_encoder = joblib.load('label_encoder.pkl')
 
 def predict_resume_category(resume_text):
     cleaned = resume_text.lower()
+
+    # Fast keyword-based override for Peoplesoft
+    peoplesoft_keywords = ['peoplesoft', 'peoplecode', 'sqr', 'application engine', 'component interface']
+    if any(keyword in cleaned for keyword in peoplesoft_keywords):
+        return 'peoplesoft resume'
+
+    # Model prediction fallback
     vec = vectorizer.transform([cleaned])
     pred = model.predict(vec)
     label = label_encoder.inverse_transform(pred)[0]
