@@ -34,14 +34,14 @@ Resumes in `.docx` format were provided in a ZIP file. Each resume belongs to on
 
 ### 4. Model Building
 Trained 8 ML models:
-- Logistic Regression
+- Logistic Regression (best )
 - Naive Bayes
 - SVC
 - Decision Tree
 - Random Forest
 - Gradient Boosting
 - Bagging
-- Voting Classifier (best)
+- Voting Classifier
 
 ### 5. Evaluation
 
