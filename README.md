@@ -60,7 +60,8 @@ Trained 8 ML models:
 ##  How to Use
 
 🔗 **Live App**: https://resume-classification-app-sz7m5qtc3cwdeqxngbsqb5.streamlit.app
-  **Notebook** : Resume Classification main.ipynb
+   
+   **Notebook** : Resume Classification main.ipynb
 
 Paste your resume text into the app to get an instant category prediction.
 
